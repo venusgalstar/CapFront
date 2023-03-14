@@ -3,6 +3,7 @@ import { get } from 'svelte/store'
 import Home from '@components/home/Home.svelte'
 import Trade from '@components/trade/Trade.svelte'
 import Pool from '@components/pool/Pool.svelte'
+import Stake from '@components/stake/Stake.svelte'
 
 import { component, pageName, selectedMarket } from './stores'
 import { setPageTitle } from './ui'
@@ -20,6 +21,10 @@ const PAGES = {
 	'Pool': {
 		component: Pool,
 		paths: ['pool']
+	},
+	'Stake': {
+		component: Stake,
+		paths: ['stake']
 	}
 };
 
